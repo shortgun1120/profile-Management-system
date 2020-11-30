@@ -1,0 +1,29 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card-header text-center">
+                <label>
+                    <h3>
+                        <b>
+                            <strong>
+                                Edit Your Profile
+                            </strong>
+                        </b>
+                    </h3>
+                </label>
+            </div>
+            <form method="POST" action="/editprofile" enctype="multipart/form-data">
+                <input type="text" name="name" placeholder="Eneter Your Name" class="form-control mt-3" value="{{user.name}}"/>
+                <input type="text" name="userName" placeholder="Eneter Your Username" class="form-control mt-3" value="{{user.userName}}"/>
+                <input type="email" name="email" placeholder="Eneter Your Email" class="form-control mt-3" value="{{user.email}}"/>
+                <input type="file" name="img" class="form-control mt-3"/>
+                <input type="password" name="password" placeholder="Your Password" class="form-control mt-3" value="{{user.password}}"/>
+                <input type="submit" class="form-control btn btn-success mt-3" value="Save Change" />
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+{{>footer}}

@@ -1,0 +1,20 @@
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="card-image">
+                <img src="{{user.profilePath}}" class="img-fluid" />
+            </div>
+            <div class="text-center">
+                <ul style="list-style: none;">
+                    <li>Name:- {{user.name}}</li>
+                    <li>Username:- {{user.userName}}</li>
+                    <li>email:- {{user.email}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+{{>footer}}
